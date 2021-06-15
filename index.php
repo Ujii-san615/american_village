@@ -1,4 +1,19 @@
 <?php get_header(); ?>
+<main class="main">
+    <section class="section1">
+        <div class="main_box">
+        <div class="main_img_pc">
+            <img class="pc_main" src="./assets/img/visual_1_pc.png" alt="メイン画像pc用"> 
+            <img class="sp_main" src="./assets/img/visual_1_sp.png" alt="メイン画像sp用">
+        </div>
+        <div class="main_text_pc">
+            <img class="text_pc" src="./assets/img/visual_text_pc.png" alt="text_pc">
+            <img class="text_sp" src="./assets/img/visual_text_sp.png" alt="text_sp">
+        </div>
+        </div>
+        <p class="main_word">進化し続ける「街」アメリカンビレッジマガジン</p>
+
+
     <div class="c-wrap">
         <div class="c-grid">
             <div class="p-contents">

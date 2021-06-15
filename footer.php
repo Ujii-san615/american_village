@@ -1,6 +1,7 @@
 <footer class="footer">
-    <p class="footer__copyright"><small>&copy; <?php bloginfo( 'name' ); ?> 2017</small></p>
+    <p class="footer-p"><span>Copyright &copy; Shinohara. ALL RIGHTS RESAVED.</span></p>
 </footer>
+
 <?php wp_footer(); ?>
 </body>
 </html>

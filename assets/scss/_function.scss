@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+
+
+// ------------ココから-------------------
+
+  $black: black;
+  $white: white;
+
+@mixin flex_box($justfy:center) {
+  display: flex;
+  justify-content: $justfy;
+  align-items: center;
+}
+
+ 

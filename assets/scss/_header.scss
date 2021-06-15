@@ -1,0 +1,55 @@
+/*----------------------*/
+/*   headerはココから   */
+/*----------------------*/
+// body{
+//   max-width: 1152px;
+//   margin: auto;
+// }
+.header{
+  max-width: 1152px;
+  height: 120px;
+  // background-color: red;
+ @include flex_box(flex-end);
+  margin: 0 auto;
+  position: relative;
+  .header_left{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+  }
+  .nav{
+    width: 400px;
+    // background-color: pink;
+    @include flex_box();
+    
+    li{
+      padding: 3%;
+      font-size: 14px;
+      }
+    }
+
+}
+
+/*----------------------*/
+/*   headerはココで終わり   */
+/*----------------------*/
+
+/*----------------------*/
+/*　レスポンシブはココから   */
+/*----------------------*/
+
+@media screen and (max-width:767px) {
+  .header_right{
+    display: none;
+  }
+  .header{
+    flex-direction: column;
+    width: 100%;
+  }
+
+}
+
+/*----------------------*/
+/*　レスポンシブはココで終わり   */
+/*----------------------*/
