@@ -11,7 +11,7 @@
             <img class="text_sp" src="<?php echo get_theme_file_uri('./assets/img/visual_text_sp.png'); ?>" alt="text_sp">       
         </div>
         </div>
-        <p class="main_word">進化し続ける「街」アメリカンビレッジマガジン</p>
+        <p class="main_word">進化し続ける&lceil;街&rfloor;<span>アメリカンビレッジマガジン</span></p>
 
 
     <div class="section2">
