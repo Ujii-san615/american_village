@@ -3,7 +3,11 @@
     <section class="section1">
         <div class="main_box">
         <div class="main_img_pc">
-            <img class="pc_main" src="<?php echo get_theme_file_uri('./assets/img/visual_1_pc.png'); ?>" alt="メイン画像pc用">
+            <div class="main_slider">
+                <?php
+                echo do_shortcode('[smartslider3 slider="2"]');
+                ?>
+            </div>    
             <img class="sp_main" src="<?php echo get_theme_file_uri('./assets/img/visual_1_sp.png'); ?>" alt="メイン画像sp用用">
         </div>
         <div class="main_text_pc">

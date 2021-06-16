@@ -7,6 +7,7 @@
   margin: 0 auto;
  @include flex_box(flex-end);
   position: relative;
+
 }
 
 .header_left{
@@ -25,6 +26,7 @@
     }
 .navToggle {
   display: none;
+
 }
 
 /* グローバルナビのcss */
