@@ -21,11 +21,17 @@
     <img class="logo" src="<?php echo get_theme_file_uri('./assets/img/logo.png'); ?>" alt="logo">
     </div>
     <div class="header_right">
-        <ul class="nav">
+     <?php 
+        wp_nav_menu( array( 
+            'theme_location' => 'header-menu',
+            'container' => 'nav'
+        ) ); 
+     ?>
+        <!-- <ul class="nav">
         <li>Menu01</li>
         <li>Menu02</li>
         <li>Menu03</li>
         <li>Menu04</li>
-        </ul>
+        </ul> -->
     </div>
     </header>
