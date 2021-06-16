@@ -180,6 +180,9 @@ li {
     display: block;
   }
   /*表示されるメニューの中身はココで終わり*/
+  .menu {
+    display: block;
+  }
 }
 
 /*----------------------*/
@@ -374,11 +377,7 @@ li {
   .section2-ul .section2-li .section2-h2 {
     padding-bottom: 6rem;
   }
-  .menu {
-    display: block;
-  }
 }
-
 
 /*----------------------*/
 /*　レスポンシブはココで終わり   */
