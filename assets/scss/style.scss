@@ -1,10 +1,6 @@
-
 @import "_function.scss";
 @import "_header.scss";
 @import "_footer.scss";
-
-
-
 
 /*----------------------*/
 /*   section1はココから   */
@@ -13,17 +9,21 @@
 .section1{
   max-width: 1152px;
   margin: 0 auto;
-  .main_box{
-    @include flex_box(center);
-    flex-direction: column;
-    position: relative;  
-    .main_text_pc{
-      position: absolute;
-      bottom: -25px;
-      right: 3px;
-      z-index: 20;
-    }
+}
+.main_box{
+  position: relative;  
+  .main_text_pc{
+    position: absolute;
+    bottom: -50px;
+    right: 3px;
   }
+}
+.main_img_pc {
+  text-align: center;
+}
+.main_word {
+  font-size: 1.4em;
+  padding: 1.2rem 0;
 }
 .sp_main{
   display: none;
@@ -31,12 +31,6 @@
 .text_sp{
   display: none;
 }
-
-
-
-
-
-
 /*----------------------*/
 /*   section1はココで終わり   */
 /*----------------------*/
@@ -48,7 +42,7 @@
   max-width: 1152px;
   margin: 0 auto;
   .section1-h1 {
-    font-size: 2.5em;
+    font-size: 2em;
     padding: 3rem;
     text-transform: capitalize;
     text-align: center
@@ -62,17 +56,15 @@
     max-width: 320px;
     height: 30rem;
     margin-bottom: 2rem;
-    .section2-h2,.post__meta__item {
+    .post__meta__item,.section2-h2{
       color: $black;
-      font-size: 15px;
     }
-    .section2-h2{
-      padding: 1.3rem 0 9rem;
-      font-weight: bold;
+    .section2-h2 {
+      padding: 1.3rem 0 9rem .5rem;
     }
-    .post__meta__item{
-      font-size: 16px; 
-    }
+  }
+  .time-p {
+    padding-left: .5rem;
   }
   .section2-p {
     width: 100px;
@@ -80,7 +72,6 @@
     margin-left: 12rem;
     padding-right: 1.2rem;
     display: inline;
-    // vertical-align: bottom;
     position: relative;
     &::before {
       content: '';
@@ -94,10 +85,10 @@
       background-color: black;
     }
     
-    .section2-a {
-      color: $black;
-    }
   }
+}
+.section2-p > .section2-a {
+  color: black;
 }
 .section2-p:hover::before {
   width: 90%;
@@ -108,7 +99,6 @@
   box-shadow:3px 3px 5px 5px gray;
   // border:1px solid #000;
 }
-
 
 /*----------------------*/
 /*   section2はココで終わり  */
@@ -126,20 +116,39 @@
   .sp_main{
     display: initial;
   }
+  .main_text_pc {
+    top: 33px;
+    left: 30px;
+  }
   .text_pc{
     display: none;
   }
   .text_sp{
     display: initial;
   }
-  // .logo{
-    
-  // }
+  .main_word {
+    font-size: 1.5em;
+    text-align: center;
+    span {
+      display: block;
+    }
+  }
   // ----------------section2はココから---------------
+  .section2 {
+    .section1-h1 {
+      padding: 0 0 1.2rem;
+    }
+  }
   .section2-ul {
     width: 320px;
     display: block;
     margin: 0 auto;
+    .section2-li {
+      height: 25rem;
+      .section2-h2 {
+        padding-bottom: 6rem;
+      }
+    }
   }
 }
   // ----------------section2はココで終わり ---------------

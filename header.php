@@ -21,11 +21,30 @@
     <img class="logo" src="<?php echo get_theme_file_uri('./assets/img/logo.png'); ?>" alt="logo">
     </div>
     <div class="header_right">
-    <?php 
+
+        <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+    <input type="checkbox" name="navToggle" id="navToggle" class="navToggle">
+    <!-- ハンバーガーメニューのアイコン -->
+    <label for="navToggle" class="btn-burger">
+        <span class="icon"></span>
+    </label>
+    <!--表示されるメニュー-->
+    <ul class="nav menu">
+        <li class="nav-li menu-item"><a href="">
+        <?php 
         wp_nav_menu( array( 
             'theme_location' => 'header-menu',
             'container' => 'nav'
         ) ); 
     ?>
+        </a></li>
+
+    </ul>
+
     </div>
+
+
+
+    
+
     </header>
