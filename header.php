@@ -16,7 +16,7 @@
 
     <header class="header">
     <div class="header_left">
-        <img class="logo" src="./assets/img/logo.png" alt="logo">
+    <img class="logo" src="<?php echo get_theme_file_uri('./assets/img/logo.png'); ?>" alt="logo">
     </div>
     <div class="header_right">
         <ul class="nav">
