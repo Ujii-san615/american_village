@@ -28,14 +28,6 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
-}
-
-.header_left {
-  position: absolute;
-  top: 10px;
-  left: -6px;
-  z-index: 10;
 }
 
 .nav {
@@ -230,7 +222,6 @@ li {
   position: absolute;
   bottom: -56px;
   right: -57px;
-  width: 100%;
 }
 
 .main_img_pc {
@@ -341,25 +332,46 @@ li {
 /*   section2はココで終わり  */
 /*----------------------*/
 /*----------------------*/
+/*　singleページはココから   */
+/*----------------------*/
+.p-post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.p-post .post__ttl {
+  font-size: 30px;
+}
+
+.p-post .post__ttl > a {
+  color: #000;
+}
+
+.p-post .wp-post-image {
+  width: 300px;
+}
+
+/*----------------------*/
+/* singleページはココで終わり  */
+/*----------------------*/
+/*----------------------*/
 /*　レスポンシブはココから   */
 /*----------------------*/
 @media screen and (max-width: 767px) {
   .main_slider {
-    display: none;
-  }
-  .sp_main {
-    display: initial;
     width: 100%;
-  }
-  .main_text_pc {
-    top: 33px;
-    left: 30px;
-  }
-  .text_pc {
-    display: none;
-  }
-  .text_sp {
-    display: initial;
   }
   .main_word {
     font-size: 1.5em;

@@ -17,11 +17,7 @@
     <?php wp_body_open(); ?>
 
     <header class="header">
-    <div class="header_left">
-    <img class="logo" src="<?php echo get_theme_file_uri('./assets/img/logo.png'); ?>" alt="logo">
-    </div>
     <div class="header_right">
-
         <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
     <input type="checkbox" name="navToggle" id="navToggle" class="navToggle">
     <!-- ハンバーガーメニューのアイコン -->

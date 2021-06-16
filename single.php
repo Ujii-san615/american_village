@@ -1,9 +1,5 @@
-<?php 
-        wp_nav_menu( array( 
-            'theme_location' => 'header-menu',
-            'container' => 'nav'
-        ) ); 
-?>
+<?php get_header(); ?>
+<div></div>
     <div class="c-wrap">
         <div class="c-grid">
             <div class="p-contents">
