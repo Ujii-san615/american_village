@@ -217,6 +217,9 @@ li {
 .section1 {
   max-width: 1152px;
   margin: 0 auto;
+  padding: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .main_box {
@@ -225,8 +228,9 @@ li {
 
 .main_box .main_text_pc {
   position: absolute;
-  bottom: -50px;
-  right: 3px;
+  bottom: -56px;
+  right: -57px;
+  width: 100%;
 }
 
 .main_img_pc {
@@ -340,11 +344,12 @@ li {
 /*　レスポンシブはココから   */
 /*----------------------*/
 @media screen and (max-width: 767px) {
-  .pc_main {
+  .main_slider {
     display: none;
   }
   .sp_main {
     display: initial;
+    width: 100%;
   }
   .main_text_pc {
     top: 33px;
