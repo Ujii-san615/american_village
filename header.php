@@ -29,8 +29,6 @@
         <span class="icon"></span>
     </label>
     <!--表示されるメニュー-->
-    <ul class="nav menu">
-        <li class="nav-li menu-item"><a href="">
         <?php 
         wp_nav_menu( array( 
             'theme_location' => 'header-menu',
