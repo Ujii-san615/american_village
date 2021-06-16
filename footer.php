@@ -1,7 +1,8 @@
 <footer class="footer">
-    <p class="footer-p"><span>Copyright &copy; Shinohara. ALL RIGHTS RESAVED.</span></p>
+    <p class="footer-p">Copyright &copy; Shinohara.<span>all right reserved.</span></p>
 </footer>
 
 <?php wp_footer(); ?>
+<script src="./assets/js/app.js"></script>
 </body>
 </html>
