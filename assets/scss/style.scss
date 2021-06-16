@@ -62,8 +62,16 @@
     max-width: 320px;
     height: 30rem;
     margin-bottom: 2rem;
-    .section2-h2 {
+    .section2-h2,.post__meta__item {
+      color: $black;
+      font-size: 15px;
+    }
+    .section2-h2{
       padding: 1.3rem 0 9rem;
+      font-weight: bold;
+    }
+    .post__meta__item{
+      font-size: 16px; 
     }
   }
   .section2-p {
