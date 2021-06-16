@@ -31,6 +31,22 @@
 
 }
 
+/* グローバルナビのcss */
+/* ul 要素に display: flex を指定 */
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+.menu-item{
+  padding: 12px;
+}
+
+.menu-item a{
+  color:#000;
+}
+
+
 /*----------------------*/
 /*   headerはココで終わり   */
 /*----------------------*/
