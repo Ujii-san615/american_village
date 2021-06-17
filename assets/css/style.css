@@ -80,7 +80,7 @@ li {
 @media screen and (max-width: 767px) {
   .header {
     width: 100%;
-    height: 300px;
+    height: 20px;
   }
   .nav {
     -webkit-box-orient: vertical;
@@ -98,11 +98,11 @@ li {
     cursor: pointer;
     display: block;
     width: 56px;
-    height: 60px;
+    height: 10px;
     position: absolute;
-    top: 25%;
+    top: 20%;
     right: 10%;
-    z-index: 11;
+    z-index: 30;
   }
   /*ハンバーガーアイコンを作る三本線*/
   .icon, .icon::before, .icon::after {
@@ -152,7 +152,7 @@ li {
   .header_right .nav {
     display: none;
     position: absolute;
-    top: 300px;
+    top: 240px;
     left: 0;
     z-index: 20;
   }
@@ -204,13 +204,6 @@ li {
   position: relative;
 }
 
-.header_left {
-  position: absolute;
-  top: -110px;
-  left: 167px;
-  z-index: 10;
-}
-
 .section1 {
   max-width: 1152px;
   margin: 0 auto;
@@ -222,23 +215,24 @@ li {
 }
 
 .main_box .main_slider {
-  width: 1020px;
-  margin: 0 auto;
+  margin: 0 5%;
 }
 
 .main_box .main_text_pc {
   position: absolute;
-  bottom: -56px;
-  right: 3px;
-}
-
-.main_box .main_text_pc .text_sp {
-  display: none;
+  bottom: -13%;
+  right: 0%;
 }
 
 .main_word {
   font-size: 1.4em;
   padding: 1.2rem 0;
+}
+
+.logo {
+  position: absolute;
+  top: -28%;
+  z-index: 20;
 }
 
 /*----------------------*/
@@ -275,6 +269,7 @@ li {
 
 .section2-ul .section2-li {
   max-width: 320px;
+  height: 30rem;
   height: 28rem;
   margin-bottom: 2rem;
 }
@@ -284,6 +279,7 @@ li {
 }
 
 .section2-ul .section2-li .section2-h2 {
+  padding: 1.3rem 0 9rem .5rem;
   padding: .9rem 0 9rem .5rem;
 }
 
@@ -369,9 +365,42 @@ li {
 /*----------------------*/
 /*　レスポンシブはココから   */
 /*----------------------*/
+@media (min-width: 750px) {
+  .text_sp {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 767px) {
+  .header_left {
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header_left .logo {
+    width: 155px;
+    padding-bottom: 20px;
+  }
   .main_slider {
-    width: 100%;
+    height: 395px;
+  }
+  .main_slider .n2-ss-slider {
+    height: 395px;
+  }
+  .main_text_pc {
+    display: none;
+  }
+  .text_sp {
+    display: block;
+    top: 33px;
+    left: 30px;
   }
   .main_word {
     font-size: 1.5em;
