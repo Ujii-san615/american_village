@@ -177,7 +177,8 @@ li {
 /*   footerはココから   */
 /*----------------------*/
 .footer {
-  height: 100px;
+  height: 140px;
+  /*0617*/
   background-color: black;
 }
 
@@ -186,7 +187,8 @@ li {
   color: white;
   text-transform: capitalize;
   text-align: center;
-  line-height: 100px;
+  line-height: 140px;
+  /*0617*/
 }
 
 .footer .footer-p span {
@@ -199,11 +201,23 @@ li {
 /*----------------------*/
 /*   section1はココから   */
 /*----------------------*/
-.main {
+.header_left .main {
   font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
   position: relative;
 }
 
+<<<<<<< HEAD
+=======
+.header_left .header_left {
+  position: absolute;
+  top: 0;
+  left: 150px;
+  top: -110px;
+  left: 167px;
+  z-index: 10;
+}
+
+>>>>>>> 1e8f8780f2982cfc9f662877d063452fce317f7c
 .section1 {
   max-width: 1152px;
   margin: 0 auto;
@@ -220,8 +234,14 @@ li {
 
 .main_box .main_text_pc {
   position: absolute;
+<<<<<<< HEAD
   bottom: -13%;
   right: 0%;
+=======
+  bottom: 23px;
+  bottom: -56px;
+  right: 3px;
+>>>>>>> 1e8f8780f2982cfc9f662877d063452fce317f7c
 }
 
 .main_word {
@@ -269,8 +289,13 @@ li {
 
 .section2-ul .section2-li {
   max-width: 320px;
+<<<<<<< HEAD
   height: 30rem;
   height: 28rem;
+=======
+  height: 27rem;
+  /*0617*/
+>>>>>>> 1e8f8780f2982cfc9f662877d063452fce317f7c
   margin-bottom: 2rem;
 }
 
@@ -278,9 +303,19 @@ li {
   color: black;
 }
 
+.section2-ul .section2-li .post__meta__date {
+  display: block;
+  padding: .5rem 0 0 0;
+}
+
 .section2-ul .section2-li .section2-h2 {
+<<<<<<< HEAD
   padding: 1.3rem 0 9rem .5rem;
   padding: .9rem 0 9rem .5rem;
+=======
+  height: 6.5rem;
+  padding: 1.2rem 0;
+>>>>>>> 1e8f8780f2982cfc9f662877d063452fce317f7c
 }
 
 .section2-ul .time-p {
@@ -290,8 +325,8 @@ li {
 .section2-ul .section2-p {
   width: 100px;
   color: black;
-  margin-left: 12rem;
-  padding-right: 1.2rem;
+  margin-left: 14rem;
+  /*0617*/
   display: inline;
   position: relative;
 }
@@ -299,7 +334,8 @@ li {
 .section2-ul .section2-p::before {
   content: '';
   position: absolute;
-  right: 5%;
+  right: -4%;
+  /*0617*/
   bottom: -10px;
   display: inline-block;
   width: 30px;
