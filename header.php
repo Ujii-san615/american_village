@@ -14,33 +14,28 @@
     </head>
     
     <body <?php body_class(); ?>>
-    <?php wp_body_open(); ?>
+        <?php wp_body_open(); ?>
+        <header class="header">
+            <div class="header_right">
+                    <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+                <input type="checkbox" name="navToggle" id="navToggle" class="navToggle">
+                <!-- ハンバーガーメニューのアイコン -->
+                <label for="navToggle" class="btn-burger">
+                    <span class="icon"></span>
+                </label>
+                <!--表示されるメニュー-->
+                <ul class="nav menu">
+                    <li class="nav-li menu-item">
+                        <a href="">
+                        <?php 
+                        wp_nav_menu( array( 
+                            'theme_location' => 'header-menu',
+                            'container' => 'nav'
+                        ) ); 
+                        ?>
+                        </a>
+                    </li>
 
-    <header class="header">
-    <div class="header_right">
-        <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
-    <input type="checkbox" name="navToggle" id="navToggle" class="navToggle">
-    <!-- ハンバーガーメニューのアイコン -->
-    <label for="navToggle" class="btn-burger">
-        <span class="icon"></span>
-    </label>
-    <!--表示されるメニュー-->
-    <ul class="nav menu">
-        <li class="nav-li menu-item"><a href="">
-        <?php 
-        wp_nav_menu( array( 
-            'theme_location' => 'header-menu',
-            'container' => 'nav'
-        ) ); 
-        ?>
-        </a></li>
-
-    </ul>
-
-    </div>
-
-
-
-    
-
-    </header>
+                </ul>
+            </div>
+        </header>
