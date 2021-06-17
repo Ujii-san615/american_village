@@ -18,7 +18,7 @@ ul {
 .header {
   max-width: 1152px;
   height: 120px;
-  margin: 0 auto;
+  margin: 20px auto 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,6 +28,7 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 }
 
 .nav {
@@ -36,9 +37,9 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -59,6 +60,7 @@ li {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
+  text-align: center;
 }
 
 .menu-item {
@@ -197,10 +199,15 @@ li {
 /*----------------------*/
 /*   section1はココから   */
 /*----------------------*/
+.main {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  position: relative;
+}
+
 .header_left {
   position: absolute;
-  top: 0;
-  left: 150px;
+  top: -110px;
+  left: 167px;
   z-index: 10;
 }
 
@@ -214,9 +221,14 @@ li {
   position: relative;
 }
 
+.main_box .main_slider {
+  width: 1020px;
+  margin: 0 auto;
+}
+
 .main_box .main_text_pc {
   position: absolute;
-  bottom: 23px;
+  bottom: -56px;
   right: 3px;
 }
 
