@@ -8,6 +8,7 @@
 .main{
     font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
     position: relative;
+    margin: 0 2%;
   }
 .section1{
   max-width: 1152px;
@@ -23,6 +24,9 @@
     position: absolute;
     bottom: -13%;
     right: 0%;
+  }
+  .main_text_sp{
+    display: none;
   }
 }
 .main_word {
@@ -44,8 +48,8 @@
 /*   section2はココから   */
 /*----------------------*/
 .section2 {
-  max-width: 1152px;
-  margin: 0 auto;
+  // max-width: 1152px;
+  margin: 0 5%;
   .section1-h1 {
     font-size: 2em;
     padding: 3rem;
@@ -58,12 +62,15 @@
   flex-wrap: wrap;
   margin-bottom: 8rem;
   .section2-li {
-    max-width: 320px;
+    // max-width: 320px;
     height: 27rem; /*0617*/
     margin-bottom: 2rem;
     .post__meta__item,.section2-h2{
       color: $black;
       // padding: .9rem 0 0; /*0617*/
+    }
+    .section2-img {
+      width: 100%;
     }
     .post__meta__date {
       display: block;
@@ -145,43 +152,61 @@
 /*----------------------*/
 /*　レスポンシブはココから   */
 /*----------------------*/
-@media (min-width:750px){
-  .text_sp{
-      display: none;
-  }
-}
-
 @media screen and (max-width:767px) {
   // .header{
   //   height: 30px;
   // }
-  .header_left{ 
-    position: static; 
-    @include flex_box(center);
-    .logo{
-      width: 155px;
-      padding-bottom:20px
-    }
-    } 
-  .main_slider{
-    height: 395px;
-    .n2-ss-slider{
-      height: 395px;
-    }
-  }
 
-  .main_text_pc {
-    display: none;
+.section1{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+  .main_box{ 
+    position: static;
+    width: 100%;
+    .main_logo{
+      display: flex;
+      justify-content: center;
+      padding-bottom: 20px;
+      .logo{
+        position: static;
+        top: -25%;
+        z-index: 20;
+        width: 30vw;
+      }
+    }
+    .main_slider{
+      margin: 0;
+      #n2-ss-2{
+        max-height: 300px;
+        min-height: 300px;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    .main_text_pc {
+      display: none;
+    }
+    .main_text_sp {
+      position: absolute;
+      display: flex;
+      justify-content:right;
+      top: 40%;
+      width: 100%;
+      .text_sp{
+        width: 70%;
+        height: 80%;
+      }
+    }
   }
-  .text_sp {
-    display: block;
-    top: 33px;
-    left: 30px;
-  }
-
   .main_word {
-    font-size: 1.5em;
+    font-size: 0.9em;
     text-align: center;
+    padding: 1.2rem 0;
     span {
       display: block;
     }
@@ -189,43 +214,28 @@
   // ----------------section2はココから---------------
   .section2 {
     .section1-h1 {
-      padding: 0 0 1.2rem;
+      padding: 0 0 0.3rem;
+      font-size: 2.0em;
     }
-  }
+
   .section2-ul {
     width: 320px;
     display: block;
     margin: 0 auto;
     .section2-li {
       height: 25rem;
+      .section2-p {
+        margin-left: 13rem;
+      }
       .section2-h2 {
-        padding-bottom: 6rem;
+        padding-bottom: 0rem;
       }
     }
   }
 }
+}
   // ----------------section2はココで終わり ------------------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-
-
 
 /*----------------------*/
 /*　レスポンシブはココで終わり   */
 /*----------------------*/
-

@@ -18,7 +18,7 @@
         <?php wp_body_open(); ?>
         <header class="header">
             <div class="header_right">
-                 <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+                <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
                 <input type="checkbox" name="navToggle" id="navToggle" class="navToggle">
                 <!-- ハンバーガーメニューのアイコン -->
                 <label for="navToggle" class="btn-burger">
