@@ -80,7 +80,7 @@ li {
 @media screen and (max-width: 767px) {
   .header {
     width: 100%;
-    height: 300px;
+    height: 20px;
   }
   .nav {
     -webkit-box-orient: vertical;
@@ -98,11 +98,11 @@ li {
     cursor: pointer;
     display: block;
     width: 56px;
-    height: 60px;
+    height: 10px;
     position: absolute;
-    top: 25%;
+    top: 20%;
     right: 10%;
-    z-index: 11;
+    z-index: 30;
   }
   /*ハンバーガーアイコンを作る三本線*/
   .icon, .icon::before, .icon::after {
@@ -152,7 +152,7 @@ li {
   .header_right .nav {
     display: none;
     position: absolute;
-    top: 300px;
+    top: 240px;
     left: 0;
     z-index: 20;
   }
@@ -177,7 +177,8 @@ li {
 /*   footerはココから   */
 /*----------------------*/
 .footer {
-  height: 100px;
+  height: 140px;
+  /*0617*/
   background-color: black;
 }
 
@@ -186,7 +187,8 @@ li {
   color: white;
   text-transform: capitalize;
   text-align: center;
-  line-height: 100px;
+  line-height: 140px;
+  /*0617*/
 }
 
 .footer .footer-p span {
@@ -199,13 +201,15 @@ li {
 /*----------------------*/
 /*   section1はココから   */
 /*----------------------*/
-.main {
+.header_left .main {
   font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
   position: relative;
 }
 
-.header_left {
+.header_left .header_left {
   position: absolute;
+  top: 0;
+  left: 150px;
   top: -110px;
   left: 167px;
   z-index: 10;
@@ -228,12 +232,9 @@ li {
 
 .main_box .main_text_pc {
   position: absolute;
+  bottom: 23px;
   bottom: -56px;
   right: 3px;
-}
-
-.main_box .main_text_pc .text_sp {
-  display: none;
 }
 
 .main_word {
@@ -275,7 +276,8 @@ li {
 
 .section2-ul .section2-li {
   max-width: 320px;
-  height: 28rem;
+  height: 27rem;
+  /*0617*/
   margin-bottom: 2rem;
 }
 
@@ -283,8 +285,14 @@ li {
   color: black;
 }
 
+.section2-ul .section2-li .post__meta__date {
+  display: block;
+  padding: .5rem 0 0 0;
+}
+
 .section2-ul .section2-li .section2-h2 {
-  padding: .9rem 0 9rem .5rem;
+  height: 6.5rem;
+  padding: 1.2rem 0;
 }
 
 .section2-ul .time-p {
@@ -294,8 +302,8 @@ li {
 .section2-ul .section2-p {
   width: 100px;
   color: black;
-  margin-left: 12rem;
-  padding-right: 1.2rem;
+  margin-left: 14rem;
+  /*0617*/
   display: inline;
   position: relative;
 }
@@ -303,7 +311,8 @@ li {
 .section2-ul .section2-p::before {
   content: '';
   position: absolute;
-  right: 5%;
+  right: -4%;
+  /*0617*/
   bottom: -10px;
   display: inline-block;
   width: 30px;
@@ -369,9 +378,42 @@ li {
 /*----------------------*/
 /*　レスポンシブはココから   */
 /*----------------------*/
+@media (min-width: 750px) {
+  .text_sp {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 767px) {
+  .header_left {
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header_left .logo {
+    width: 155px;
+    padding-bottom: 20px;
+  }
   .main_slider {
-    width: 100%;
+    height: 395px;
+  }
+  .main_slider .n2-ss-slider {
+    height: 395px;
+  }
+  .main_text_pc {
+    display: none;
+  }
+  .text_sp {
+    display: block;
+    top: 33px;
+    left: 30px;
   }
   .main_word {
     font-size: 1.5em;

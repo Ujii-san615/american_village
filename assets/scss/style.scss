@@ -67,15 +67,20 @@
   margin-bottom: 8rem;
   .section2-li {
     max-width: 320px;
-    height: 30rem;
-    height: 28rem; //0617
+    height: 27rem; /*0617*/
     margin-bottom: 2rem;
     .post__meta__item,.section2-h2{
       color: $black;
+      // padding: .9rem 0 0; /*0617*/
+    }
+    .post__meta__date {
+      display: block;
+      padding: .5rem 0 0 0;
     }
     .section2-h2 {
-      padding: 1.3rem 0 9rem .5rem;
-      padding: .9rem 0 9rem .5rem;
+      height: 6.5rem;
+      padding: 1.2rem 0;
+
     }
   }
   .time-p {
@@ -84,14 +89,15 @@
   .section2-p {
     width: 100px;
     color: black;
-    margin-left: 12rem;
-    padding-right: 1.2rem;
+    margin-left: 14rem; /*0617*/
+    // padding-right: 1.2rem; /*0617*/
+    // padding: 0 0 0 14rem; /*0617*/
     display: inline;
     position: relative;
     &::before {
       content: '';
       position: absolute;
-      right: 5%;
+      right: -4%; /*0617*/
       bottom: -10px;
       display: inline-block;
       width: 30px;

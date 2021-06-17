@@ -2,14 +2,14 @@
 /*   footerはココから   */
 /*----------------------*/
 .footer {
-    height: 100px;
+    height: 140px; /*0617*/
     background-color: $black;
     .footer-p {
         font-size: 1.1em;
         color: $white;
         text-transform: capitalize;
         text-align: center;
-        line-height: 100px;
+        line-height: 140px; /*0617*/
         span {
             text-transform: uppercase;
         }
