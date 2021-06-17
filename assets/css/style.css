@@ -80,7 +80,7 @@ li {
 @media screen and (max-width: 767px) {
   .header {
     width: 100%;
-    height: 20px;
+    height: 300px;
   }
   .nav {
     -webkit-box-orient: vertical;
@@ -98,11 +98,11 @@ li {
     cursor: pointer;
     display: block;
     width: 56px;
-    height: 10px;
+    height: 60px;
     position: absolute;
-    top: 20%;
+    top: 25%;
     right: 10%;
-    z-index: 30;
+    z-index: 11;
   }
   /*ハンバーガーアイコンを作る三本線*/
   .icon, .icon::before, .icon::after {
@@ -152,7 +152,7 @@ li {
   .header_right .nav {
     display: none;
     position: absolute;
-    top: 240px;
+    top: 300px;
     left: 0;
     z-index: 20;
   }
@@ -199,17 +199,15 @@ li {
 /*----------------------*/
 /*   section1はココから   */
 /*----------------------*/
-.header_left .main {
+.main {
   font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
   position: relative;
 }
 
-.header_left .header_left {
+.header_left {
   position: absolute;
-  top: 0;
-  left: 150px;
   top: -110px;
-  left: 115px;
+  left: 167px;
   z-index: 10;
 }
 
@@ -230,9 +228,12 @@ li {
 
 .main_box .main_text_pc {
   position: absolute;
-  bottom: 23px;
   bottom: -56px;
   right: 3px;
+}
+
+.main_box .main_text_pc .text_sp {
+  display: none;
 }
 
 .main_word {
@@ -274,7 +275,6 @@ li {
 
 .section2-ul .section2-li {
   max-width: 320px;
-  height: 30rem;
   height: 28rem;
   margin-bottom: 2rem;
 }
@@ -284,7 +284,6 @@ li {
 }
 
 .section2-ul .section2-li .section2-h2 {
-  padding: 1.3rem 0 9rem .5rem;
   padding: .9rem 0 9rem .5rem;
 }
 
@@ -329,7 +328,7 @@ li {
           box-shadow: 3px 3px 5px 5px gray;
 }
 
-/*----------------------*/
+/*-----------------------*/
 /*   section2はココで終わり  */
 /*----------------------*/
 /*----------------------*/
@@ -370,42 +369,9 @@ li {
 /*----------------------*/
 /*　レスポンシブはココから   */
 /*----------------------*/
-@media (min-width: 750px) {
-  .text_sp {
-    display: none;
-  }
-}
-
 @media screen and (max-width: 767px) {
-  .header_left {
-    position: static;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .header_left .logo {
-    width: 155px;
-    padding-bottom: 20px;
-  }
   .main_slider {
-    height: 395px;
-  }
-  .main_slider .n2-ss-slider {
-    height: 395px;
-  }
-  .main_text_pc {
-    display: none;
-  }
-  .text_sp {
-    display: block;
-    top: 33px;
-    left: 30px;
+    width: 100%;
   }
   .main_word {
     font-size: 1.5em;
