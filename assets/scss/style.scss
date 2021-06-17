@@ -6,12 +6,20 @@
 /*   section1はココから   */
 /*----------------------*/
 .header_left{ //0616
+.main{
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    position: relative;
+  }
+.header_left{ 
   position: absolute; //0616
   top: 0; //0616
   left: 150px; //0616
+  top: -110px;
+  left: 167px;
   z-index: 10; //0616
  } //0616
 
+  }
 .section1{
   max-width: 1152px;
   margin: 0 auto;
@@ -19,9 +27,14 @@
 }
 .main_box{ 
   position: relative;
+  .main_slider{
+    width: 1020px;
+    margin: 0 auto;
+  }
   .main_text_pc{
     position: absolute;
     bottom: 23px;
+    bottom: -56px;
     right: 3px;
   }
 }
@@ -55,12 +68,14 @@
   .section2-li {
     max-width: 320px;
     height: 30rem;
+    height: 28rem; //0617
     margin-bottom: 2rem;
     .post__meta__item,.section2-h2{
       color: $black;
     }
     .section2-h2 {
       padding: 1.3rem 0 9rem .5rem;
+      padding: .9rem 0 9rem .5rem;
     }
   }
   .time-p {

@@ -4,10 +4,9 @@
 .header{
   max-width: 1152px;
   height: 120px;
-  margin: 0 auto;
+  margin: 20px auto 0 auto;
  @include flex_box(flex-end);
-  // position: relative;
-
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 }
 
 // .header_left{
@@ -19,7 +18,7 @@
   .nav{
     width: 450px;
     height: 100px;
-    @include flex_box(space-between);
+    @include flex_box(flex-end);
   }
   li{
     color: $black;
@@ -34,6 +33,7 @@
 .menu {
   display: flex;
   list-style: none;
+  text-align: center;
 }
 
 .menu-item{
