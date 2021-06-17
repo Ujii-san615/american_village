@@ -5,35 +5,35 @@
 /*----------------------*/
 /*   section1はココから   */
 /*----------------------*/
+.header_left{ //0616
+  position: absolute; //0616
+  top: 0; //0616
+  left: 150px; //0616
+  z-index: 10; //0616
+ } //0616
 
 .section1{
   max-width: 1152px;
   margin: 0 auto;
-  padding: 40px;
-  box-sizing: border-box;
+  position: relative; //0616
 }
-.main_box{
-  position: relative;  
+.main_box{ 
+  position: relative;
   .main_text_pc{
     position: absolute;
-    bottom: -56px;
-    right: -57px;
-    // width: 100%;
+    bottom: 23px;
+    right: 3px;
+    .text_sp{
+      display: none;
+    }
   }
-}
-.main_img_pc {
-  text-align: center;
 }
 .main_word {
   font-size: 1.4em;
   padding: 1.2rem 0;
 }
-.sp_main{
-  display: none;
-}
-.text_sp{
-  display: none;
-}
+
+
 /*----------------------*/
 /*   section1はココで終わり   */
 /*----------------------*/
@@ -137,9 +137,18 @@
 /*----------------------*/
 
 @media screen and (max-width:767px) {
+  // .header{
+  //   height: 30px;
+  // }
+  // .header_left{ 
+  //   position: static; 
+  //   @include flex_box(center);
+  //   .logo{
+  //    width: 45%;
+  //   }
+  //  } 
   .main_slider{
-    width: 100%;
-
+    width: 100%;  
   }
   // .sp_main{
   //   display: initial;

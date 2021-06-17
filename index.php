@@ -1,19 +1,21 @@
 <?php get_header(); ?>
 <main class="main">
+    <div class="header_left">  <!-- 0616 -->
+        <img class="logo" src="<?php echo get_theme_file_uri('./assets/img/logo.png'); ?>" alt="logo">
+    </div>
     <section class="section1">
         <div class="main_box">
-        <div class="main_img_pc">
-            <img class="logo" src="<?php echo get_theme_file_uri('./assets/img/logo.png'); ?>" alt="logo">
-            <div class="main_slider">
-                <?php
-                echo do_shortcode('[smartslider3 slider="2"]');
-                ?>   
-            </div>    
-        </div>
-        <div class="main_text_pc">
-            <img class="text_pc" src="<?php echo get_theme_file_uri('./assets/img/visual_text_pc.png'); ?>" alt="text_pc">
-            <img class="text_sp" src="<?php echo get_theme_file_uri('./assets/img/visual_text_sp.png'); ?>" alt="text_sp">       
-        </div>
+            <div class="main_img_pc">
+                <div class="main_slider">
+                    <?php
+                    echo do_shortcode('[smartslider3 slider="2"]');
+                    ?>   
+                </div>    
+            </div>
+            <div class="main_text_pc">
+                <img class="text_pc" src="<?php echo get_theme_file_uri('./assets/img/visual_text_pc.png'); ?>" alt="text_pc">
+                <img class="text_sp" src="<?php echo get_theme_file_uri('./assets/img/visual_text_sp.png'); ?>" alt="text_sp">       
+            </div>
         </div>
         <p class="main_word">進化し続ける&lceil;街&rfloor;<span>アメリカンビレッジマガジン</span></p>
 
