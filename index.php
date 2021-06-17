@@ -3,12 +3,12 @@
     <section class="section1">
         <div class="main_box">
         <div class="main_img_pc">
+            <img class="logo" src="<?php echo get_theme_file_uri('./assets/img/logo.png'); ?>" alt="logo">
             <div class="main_slider">
                 <?php
                 echo do_shortcode('[smartslider3 slider="2"]');
-                ?>
+                ?>   
             </div>    
-            <img class="sp_main" src="<?php echo get_theme_file_uri('./assets/img/visual_1_sp.png'); ?>" alt="メイン画像sp用用">
         </div>
         <div class="main_text_pc">
             <img class="text_pc" src="<?php echo get_theme_file_uri('./assets/img/visual_text_pc.png'); ?>" alt="text_pc">
@@ -16,7 +16,6 @@
         </div>
         </div>
         <p class="main_word">進化し続ける&lceil;街&rfloor;<span>アメリカンビレッジマガジン</span></p>
-
 
     <div class="section2">
         <h1 class="section1-h1">
