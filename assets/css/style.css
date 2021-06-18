@@ -250,7 +250,8 @@ li {
 /*   section2はココから   */
 /*----------------------*/
 .section2 {
-  margin: 0 5%;
+  max-width: 1152px;
+  margin: 0 auto;
 }
 
 .section2 .section1-h1 {
