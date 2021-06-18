@@ -186,8 +186,8 @@
     .main_slider{
       margin: 0;
       #n2-ss-2{
-        max-height: 300px;
-        min-height: 300px;
+        max-height: 400px;
+        min-height: 400px;
         width: 100%;
         object-fit: cover;
       }
@@ -223,17 +223,26 @@
     }
 
   .section2-ul {
-    width: 320px;
+    max-width: 480px;
     display: block;
     margin: 0 auto;
     .section2-li {
-      height: 25rem;
+      max-width: 480px;
+      height: 32rem;
       padding-bottom: 1rem;
+      .section2-img {
+        zoom: 150%;
+        max-width: 480px;
+      }
       .section2-p {
-        margin-left: 13rem;
+        margin-left: 24rem;
       }
       .section2-h2 {
+        padding-left: .9rem;
         padding-bottom: 0rem;
+      }
+      .post__meta__date {
+        padding-left: .9rem;
       }
     }
   }
