@@ -234,7 +234,7 @@ li {
 
 .main_word {
   font-size: 1.4em;
-  padding: 1.2rem 0;
+  margin: 2.0rem 0;
 }
 
 .logo {
@@ -382,7 +382,10 @@ li {
 /*　レスポンシブはココから   */
 /*----------------------*/
 @media screen and (max-width: 767px) {
-  .section1 {
+  .main {
+    margin: 0;
+  }
+  .main .section1 {
     width: 100%;
     margin: 0 auto;
     display: -webkit-box;
@@ -399,11 +402,11 @@ li {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .main_box {
+  .main .main_box {
     position: static;
     width: 100%;
   }
-  .main_box .main_logo {
+  .main .main_box .main_logo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -412,26 +415,26 @@ li {
             justify-content: center;
     padding-bottom: 20px;
   }
-  .main_box .main_logo .logo {
+  .main .main_box .main_logo .logo {
     position: static;
     top: -25%;
     z-index: 20;
     width: 30vw;
   }
-  .main_box .main_slider {
+  .main .main_box .main_slider {
     margin: 0;
   }
-  .main_box .main_slider #n2-ss-2 {
+  .main .main_box .main_slider #n2-ss-2 {
     max-height: 300px;
     min-height: 300px;
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .main_box .main_text_pc {
+  .main .main_box .main_text_pc {
     display: none;
   }
-  .main_box .main_text_sp {
+  .main .main_box .main_text_sp {
     position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -442,35 +445,35 @@ li {
     top: 40%;
     width: 100%;
   }
-  .main_box .main_text_sp .text_sp {
+  .main .main_box .main_text_sp .text_sp {
     width: 70%;
     height: 80%;
   }
-  .main_word {
+  .main .main_word {
     font-size: 0.9em;
     text-align: center;
     padding: 1.2rem 0;
   }
-  .main_word span {
+  .main .main_word span {
     display: block;
   }
-  .section2 .section1-h1 {
+  .main .section2 .section1-h1 {
     padding: 0 0 0.3rem;
     font-size: 2.0em;
   }
-  .section2 .section2-ul {
+  .main .section2 .section2-ul {
     width: 320px;
     display: block;
     margin: 0 auto;
   }
-  .section2 .section2-ul .section2-li {
+  .main .section2 .section2-ul .section2-li {
     height: 25rem;
     padding-bottom: 1rem;
   }
-  .section2 .section2-ul .section2-li .section2-p {
+  .main .section2 .section2-ul .section2-li .section2-p {
     margin-left: 13rem;
   }
-  .section2 .section2-ul .section2-li .section2-h2 {
+  .main .section2 .section2-ul .section2-li .section2-h2 {
     padding-bottom: 0rem;
   }
 }

@@ -31,7 +31,7 @@
 }
 .main_word {
   font-size: 1.4em;
-  padding: 1.2rem 0;
+  margin: 2.0rem 0;
 }
 
   .logo{
@@ -157,6 +157,9 @@
   //   height: 30px;
   // }
 
+.main{
+    margin: 0;
+
 .section1{
     width: 100%;
     margin: 0 auto;
@@ -233,6 +236,7 @@
       }
     }
   }
+}
 }
 }
   // ----------------section2はココで終わり ------------------
